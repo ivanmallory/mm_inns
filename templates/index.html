@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>The Lauerman House & Victorian Inn</title>
+</head>
+<script>
+    function swapImages(){
+        var $active = $(".banner .active");
+        var $next = ($(".banner .active").next().length > 0) ? $(".banner .active").next(): $(".banner img:first");
+            $active.fadeOut(function(){
+                $active.removeClass('active');
+                $next.fadeIn().addClass('active');
+            });
+    }
+    $(document).ready(function(){
+        setInterval('swapImages()', 8000);
+    });
+</script>
+<body>
+    <div class="navbar">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="#">Food & Drink</a></li>
+                <li><a href="#">Our Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="../static/images/victorian.jpeg" class="active">
+        <img src="../static/images/lauerman.jpg">
+    </div>
+    <div class="home_body">
+        <h1>Welcome to The Victorian Inn & The Lauerman House Inn</h1>
+        <div class="col-md col-lg col-xl">
+            <h3>The M&M Victorian Inn</h3>
+            <div class="underline"></div>
+            <h4>1393 Main Street | Marinette, WI</h4>
+            <p>	Built in 1893 by a lumber baron, The M&M Victorian Inn’s Queen Anne style Victorian architecture features carved woodwork, exquisite leaded stained glass and massive curved wood staircase. We offer elegant accommodations in our five rooms, each complete with private luxurious baths.</p>
+            <div class="interior_photos">
+                <img src="../static/images/main_floor.jpg">
+                <img src="../static/images/couches.jpg">
+                <img src="../static/images/office.jpg">
+                <img src="../static/images/bar.jpg">
+            </div>
+        </div>
+        <div class="col-md col-lg col-xl">
+            <h3>The Lauerman House Inn</h3>
+            <div class="underline"></div>
+            <h4>1975 Riverside Drive | Marinette, WI</h4>
+            <p>Built as the estate of local businessman Joseph A. Lauerman in 1910, The Lauerman House Inn features elaborate wood trim and original art glass chandeliers. One of the most impressive examples of colonial revival architecture in this part of the Midwest. The inside reveals a surprisingly modern and lively interior with seven luxurious rooms complete with private baths.</p>
+            <div class="interior_photos">
+                <img src="../static/images/main_floor2.jpg">
+                <img src="../static/images/stairs.jpg">
+                <img src="../static/images/bar2.jpg">
+            </div>
+        </div>
+        <div class="col-md col-lg col-xl" id="activities">
+            <h1>Lounge</h1>
+            <img src="../static/images/lounge.jpg">
+            <p>Join us at our 1393 Cocktail Lounge for nightly specials and entertainment. Try something different!</p>
+            <h1>Indulge</h1>
+            <p>Let us host your next private event, cocktail party or business gathering!</p>
+            <h1>Escape</h1>
+            <p>Plan your next vacation or romantic getaway at our villa, Chez Flottes, in France.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contact_info">
+            <h1>Contact Us</h1>
+            <div class="underline"></div>
+            <h2>715.732.7800</h2>
+            <h3>1975 Riverside Ave.</h3>
+            <h3>Marinette, WI 54143</h3>
+            <h3>Email Innkeeper: <a href="">innkeeper@mmvictorian.com</a></h3>
+        </div>
+        <!--Google Maps API Here-->
+            <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+</html>
