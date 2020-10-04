@@ -2,7 +2,7 @@
 .navbar{
     position: fixed;
     background-color: lavender;
-    height: 80px;
+    height: 60px;
     width: 100%;
     top: 0;
 }
@@ -21,14 +21,14 @@
     top: 15%;
     left: 5%;
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 10px;
     padding: 1rem;
     background: #924dde;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .navbar .hamburger > div{
     position: relative;
@@ -72,7 +72,7 @@
 .navbar .menu{
     position: fixed;
     background: #924dde;
-    top: 12%;
+    top: 9%;
     left: 0;
     visibility: hidden;
     overflow: hidden;
@@ -89,7 +89,7 @@
 }
 .navbar a{
     color: white;
-    padding: 15px;
+    padding: 15px 110px;
     text-decoration: none;
     text-transform: uppercase;
 }

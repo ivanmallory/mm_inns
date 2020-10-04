@@ -11,17 +11,6 @@
     <title>The Lauerman House & Victorian Inn</title>
 </head>
 <script>
-    function swapImages(){
-        var $active = $(".banner .active");
-        var $next = ($(".banner .active").next().length > 0) ? $(".banner .active").next(): $(".banner img:first");
-            $active.fadeOut(function(){
-                $active.removeClass('active');
-                $next.fadeIn().addClass('active');
-            });
-    }
-    $(document).ready(function(){
-        setInterval('swapImages()', 8000);
-    });
 </script>
 <body>
     <div class="navbar">
@@ -39,11 +28,11 @@
         </div>
     </div>
     <div class="banner">
-        <img src="../static/images/victorian.jpeg" class="active">
-        <img src="../static/images/lauerman.jpg">
+        <img src="../static/images/lauerman.jpg" class="bottom">
+        <img src="../static/images/victorian.jpeg" class="top">
     </div>
     <div class="home_body">
-        <h1>Welcome to The Victorian Inn & The Lauerman House Inn</h1>
+        <h1 class="welcome">Welcome to The Victorian Inn & The Lauerman House Inn</h1>
         <div class="col-md col-lg col-xl">
             <h3>The M & M Victorian Inn</h3>
             <div class="underline"></div>
@@ -56,10 +45,11 @@
                 <img src="../static/images/bar.jpg">
             </div>
         </div>
+        <img class="ornament" src="../static/images/ornament.png">
         <div class="col-md col-lg col-xl">
             <h3>The Lauerman House Inn</h3>
             <div class="underline"></div>
-            <h4>1975 Riverside Drive | Marinette, WI</h4>
+            <h4>1975 Riverside Ave. | Marinette, WI</h4>
             <p>Built as the estate of local businessman Joseph A. Lauerman in 1910, The Lauerman House Inn features elaborate wood trim and original art glass chandeliers. One of the most impressive examples of colonial revival architecture in this part of the Midwest. The inside reveals a surprisingly modern and lively interior with seven luxurious rooms complete with private baths.</p>
             <div class="interior_photos">
                 <img src="../static/images/main_floor2.jpg">
@@ -67,13 +57,16 @@
                 <img src="../static/images/bar2.jpg">
             </div>
         </div>
+        <img class="ornament" src="../static/images/ornament.png">
         <div class="col-md col-lg col-xl" id="activities">
             <h1>Lounge</h1>
             <img src="../static/images/lounge.jpg">
             <p>Join us at our 1393 Cocktail Lounge for nightly specials and entertainment. Try something different!</p>
             <h1>Indulge</h1>
+            <img src="../static/images/food.jpg">
             <p>Let us host your next private event, cocktail party or business gathering!</p>
             <h1>Escape</h1>
+            <img src="../static/images/chez_flottes.jpg">
             <p>Plan your next vacation or romantic getaway at our villa, Chez Flottes, in France.</p>
         </div>
     </div>
@@ -84,11 +77,11 @@
             <h2>715.732.7800</h2>
             <h3>1975 Riverside Ave.</h3>
             <h3>Marinette, WI 54143</h3>
-            <h3>Email Innkeeper: <a href="">innkeeper@mmvictorian.com</a></h3>
+            <h3><a href="">innkeeper@mmvictorian.com</a></h3>
         </div>
         <!--Google Maps API Here-->
-            <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
-            <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+            <a href="/"><i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i></a>
+            <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
         </div>
     </div>
 </body>

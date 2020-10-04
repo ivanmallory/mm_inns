@@ -46,19 +46,41 @@ table {
 	border-spacing: 0;
 }
 body{
-    background-color: #FDFD96;
+    background: linear-gradient(#fad6a5,#FDFD96);
     font-family: sans-serif;
 }
 .banner{
-    margin-top: 80px;
+    width: 375px;
+    height: 340px;
+    position: relative;
+    margin: 0 auto;
+    z-index: -1;
 }
 .banner img{
-    width: 100%;
-    margin: auto;
-    display: none;
+    width: 375px;
+    position: absolute;
+    top: 17%;
 }
-.banner img.active{
-    display: block;
+.top{
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+@keyframes fadeInOut{
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
 }
 .home_body{
     text-align: center;
@@ -72,15 +94,24 @@ body{
     padding: 10px;
     font-family: 'Peddana', serif;
 }
+.ornament{
+    width: 300px;
+    margin-top: 20px;
+}
 .home_body h1{
-    font-size: 42px;
+    font-size: 46px;
     font-weight: bolder;
-    padding: 20px;
+    padding: 10px;
     color: #924dde;
     font-family: 'Tangerine', cursive;
 }
+.welcome{
+    border: #924dde;
+    border-style: double;
+}
 .home_body h3{
-    font-size: 30px;
+    font-size: 34px;
+    font-family: 'Tangerine', cursive;
 }
 .home_body h4{
     font-size: 26px;
@@ -103,12 +134,24 @@ body{
 }
 .interior_photos img{
     width: 300px;
+    height: 200px;
     border-radius: 50%;
     box-shadow: 2px 2px 2px 2px grey;
     margin: 15px;
 }
 #activities{
     background-color: #fad6a5;
+}
+#activities img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all 0.5s ease-in-out;
+}
+#activities img:hover{
+    transform: scale(1.1);
 }
 .footer{
     margin-top: 20px;
@@ -130,4 +173,7 @@ body{
 .footer a{
     color: #924dde;
     text-decoration: none;
+}
+.fa-facebook-official, .fa-instagram{
+    padding: 15px;
 }
