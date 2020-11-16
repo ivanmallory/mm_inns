@@ -51,7 +51,7 @@ body{
 }
 .banner{
     width: 375px;
-    height: 340px;
+    height: 200px;
     position: relative;
     margin: 0 auto;
     z-index: -1;
@@ -61,30 +61,15 @@ body{
     position: absolute;
     top: 17%;
 }
-.top{
-    animation-name: fadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction: alternate;
-}
-@keyframes fadeInOut{
-    0% {
-        opacity:1;
-    }
-    45% {
-        opacity:1;
-    }
-    55% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-}
-.home_body{
+.main{
     text-align: center;
     margin: 10px;
+}
+.location{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #924dde;
+    font-family: 'Tangerine', cursive;
 }
 .col-md.col-lg.col-xl{
     margin-top: 20px;
@@ -93,6 +78,29 @@ body{
     border-radius: 20px;
     padding: 10px;
     font-family: 'Peddana', serif;
+}
+.main h2{
+    font-size: 36px;
+    color: #924dde;
+}
+.main h4{
+    font-size: 30px;
+}
+.main p{
+    font-size: 24px;
+    color: brown;
+}
+.main a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.btn{
+    padding: 15px;
+    background-color: #924dde;
+    border: 2px solid #924dde;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 .ornament{
     width: 300px;
