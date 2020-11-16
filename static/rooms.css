@@ -51,7 +51,7 @@ body{
 }
 .banner{
     width: 375px;
-    height: 200px;
+    height: 165px;
     position: relative;
     margin: 0 auto;
     z-index: -1;
@@ -66,25 +66,31 @@ body{
     margin: 10px;
 }
 .location{
-    font-size: 40px;
-    font-weight: bolder;
-    color: #924dde;
+    margin: 15px 0;
+    font-size: 38px;
     font-family: 'Tangerine', cursive;
 }
 .col-md.col-lg.col-xl{
     margin-top: 20px;
     background-color: lavender;
     box-shadow: 2px 2px grey;
-    border-radius: 20px;
     padding: 10px;
     font-family: 'Peddana', serif;
 }
 .main h2{
     font-size: 36px;
-    color: #924dde;
+}
+.underline{
+    height: 2px solid #924dde;
+    border: 2px solid #924dde;
+    border-radius: 15px;
+    width: 80%;
+    display: inline-block;
+    justify-content: center;
 }
 .main h4{
     font-size: 30px;
+    font-style: italic;
 }
 .main p{
     font-size: 24px;
@@ -95,6 +101,10 @@ body{
     text-decoration: none;
     font-size: 16px;
 }
+.thumbnails{
+    margin-top: 10px;
+    width: 200px;
+}
 .btn{
     padding: 15px;
     background-color: #924dde;
@@ -104,5 +114,30 @@ body{
 }
 .ornament{
     width: 300px;
+    margin-top: 15px;
+}
+.footer{
     margin-top: 20px;
+    background-color: lavender;
+    color: #924dde;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Peddana', serif;
+}
+.footer h1{
+    font-size: 42px;
+    text-decoration: underline;
+}
+.footer h2{
+    font-size: 32px;
+}
+.footer h3{
+    font-size: 24px;
+}
+.footer a{
+    color: #924dde;
+    text-decoration: none;
+}
+.fa-facebook-official, .fa-instagram{
+    padding: 15px;
 }

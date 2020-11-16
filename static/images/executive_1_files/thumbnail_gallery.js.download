@@ -1,0 +1,7 @@
+/*
+ Animated Thumbnail Gallery
+ Version: 2.0.0
+ (c) 2015 DMXzone.com
+ @build 06-01-2015 14:43:37
+*/
+jQuery.fn.thumbnailGallery=function(){if(jQuery(this).attr("id")){var a=Array.prototype.slice.call(arguments,0);a.unshift(jQuery(this));if(DMX.DOM_READY)return DMX.ThumbnailGallery.apply(DMX,a);jQuery(function(){DMX.include("/dmx/widgets/ThumbnailGallery/thumbnail_gallery_core.js");DMX.ThumbnailGallery.apply(DMX,a)})}return this};
