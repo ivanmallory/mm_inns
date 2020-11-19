@@ -51,7 +51,7 @@ body{
 }
 .banner{
     width: 375px;
-    height: 165px;
+    height: 320px;
     position: relative;
     margin: 0 auto;
     z-index: -1;
@@ -105,6 +105,9 @@ body{
     margin-top: 10px;
     width: 200px;
 }
+.mini_thumbnails img{
+    width: 50px;
+}
 .btn{
     padding: 15px;
     background-color: #924dde;
@@ -119,14 +122,13 @@ body{
 .footer{
     margin-top: 20px;
     background-color: lavender;
-    color: #924dde;
+    color: brown;
     text-align: center;
     padding: 10px;
     font-family: 'Peddana', serif;
 }
 .footer h1{
     font-size: 42px;
-    text-decoration: underline;
 }
 .footer h2{
     font-size: 32px;
@@ -135,7 +137,7 @@ body{
     font-size: 24px;
 }
 .footer a{
-    color: #924dde;
+    color: brown;
     text-decoration: none;
 }
 .fa-facebook-official, .fa-instagram{
